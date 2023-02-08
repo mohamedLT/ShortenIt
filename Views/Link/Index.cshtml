@@ -1,0 +1,11 @@
+@model ShortenIt.Models.Link
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<form style="display:flex;width:100vw;margin:auto; " asp-controller="Link" asp-action="Index" method="post">
+    <input class="SeacrField" asp-for="Url" /> 
+    <button class="SeachSubmit" type="submit">Shorten</button>
+</form>
